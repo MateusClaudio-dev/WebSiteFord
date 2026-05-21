@@ -9,7 +9,13 @@ let carouselArr = [];
 //class Carousel
 class Carousel {
 
-    
+    constructor(image, title, link) {
+        this.image = image;
+        this.text = title;
+        this.link = link;
+    }
+
+
       
     static Start(arr){
         if(arr){
@@ -27,6 +33,6 @@ class Carousel {
     }
 
     static Next(){
-        
+        const currentData = Carousel._arr[Carousel._sequence];
     }
 };
