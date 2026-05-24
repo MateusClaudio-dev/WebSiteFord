@@ -16,23 +16,21 @@ constructor(nome, sobrenome, email, cpf, telefone, meioContato) {
 }
 
 function Post(form) {
-
+event.preventDefault();
   let data = new contato(
+        //O form elemento c/ name = nome pegue o valor 
             form.elements.namedItem("nome").value,
             form.elements.namedItem("sobrenome").value, 
             form.elements.namedItem("email").value, 
             form.elements.namedItem("cpf").value, 
             form.elements.namedItem("telefone").value, 
             form.elements.namedItem("contato").value);
+
+    if (data.nome !== "") {
+        alert('Obrigado sr(a) ' + data.nome + ' ' + data.sobrenome + ', os seus dados foram encaminhados com sucesso!');
+    }
+
+    form.reset();
   
 }
 
-function Enviar() {
-
-    var nome = document.getElementById("nomeid");
-
-    if (nome.value != "") {
-        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
-    }
-
-}

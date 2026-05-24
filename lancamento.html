@@ -33,7 +33,7 @@
     <main>
         <div>
             <iframe style = "display: block; margin-bottom: 30px; margin-left: auto; margin-right: auto; width: 100%;
-            height: 500px;" src="https://www.youtube-nocookie.com/embed/vQsryuNmsL0?controls=0&autoplay=1&modestbranding=0&loop=1&mute=1&rel=0&hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            height: 250px;" src="https://www.youtube-nocookie.com/embed/vQsryuNmsL0?controls=0&autoplay=1&modestbranding=0&loop=1&mute=1&rel=0&hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div>
             <ul class="modelcars">
@@ -41,7 +41,7 @@
                     <img src="img/XL Cabine.jpg" class="photocar">
                     <div class="infocar">
                         <div>
-                            <input type="checkbox" value="car1" class="checkbox" onchange="SetCarToCompare(this, new Car('XL Cabine Simples 2.2 Diesel 4X4 MT 2022', 183850, 511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 'img/XL Cabine.jpg'));">
+                            <input type="checkbox" value="car1" class="checkbox" onchange="definirCarroParaComparar(this, new Carro('XL Cabine Simples 2.2 Diesel 4X4 MT 2022', 183850, 511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 'img/XL Cabine.jpg'));">
                         </div>
                         <div class="info">
                             <span class="textmodel">XL Cabine Simples 2.2 Diesel 4X4 MT 2022</span>
@@ -56,7 +56,7 @@
                     <img src="img/xls 2.2 diesel.jpg" class="photocar">
                     <div class="infocar">
                         <div>
-                            <input type="checkbox" value="car1" class="checkbox" onchange="SetCarToCompare(this, new Car('XLS 2.2 Diesel 4X4 AT 2022', 220690, 511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 'img/xls 2.2 diesel.jpg'));">
+                            <input type="checkbox" value="car1" class="checkbox" onchange="definirCarroParaComparar(this, new Carro('XLS 2.2 Diesel 4X4 AT 2022', 220690, 511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 'img/xls 2.2 diesel.jpg'));">
                         </div>
                         <div class="info">
                             <span class="textmodel">XLS 2.2 Diesel 4X4 AT 2022</span>
@@ -71,7 +71,7 @@
                     <img src="img/storm.jpg" class="photocar">
                     <div class="infocar">
                         <div>
-                            <input type="checkbox" value="car1" class="checkbox" onchange="SetCarToCompare(this, new Car('Storm 3.2 Diesel 4X4 AT 2022', 222790, 511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', 'img/storm.jpg'));">
+                            <input type="checkbox" value="car1" class="checkbox" onchange="definirCarroParaComparar(this, new Carro('Storm 3.2 Diesel 4X4 AT 2022', 222790, 511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', 'img/storm.jpg'));">
                         </div>
                         <div class="info">
                             <span class="textmodel">Storm 3.2 Diesel 4X4 AT 2022</span>
@@ -85,7 +85,7 @@
             </ul>
         </div>
         <div style="text-align: center;padding-bottom: 20px;">
-            <button type="button" style="height: 40px; width: 200px;" onclick="ShowCompare()">Comparar Carros</button>
+            <button type="button" style="height: 40px; width: 200px;" onclick="exibirComparacao()">Comparar Carros</button>
         </div> 
     </main>
     <footer>
@@ -163,7 +163,7 @@
             
         </table>
         <div style="text-align: center;padding-bottom: 20px;">
-            <button type="button" style="height: 40px; width: 200px;" onclick="HideCompare()">Fechar</button>
+            <button type="button" style="height: 40px; width: 200px;" onclick="ocultarComparacao()">Fechar</button>
         </div> 
     </div>   
 </body>

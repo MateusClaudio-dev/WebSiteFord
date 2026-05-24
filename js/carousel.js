@@ -16,23 +16,37 @@ class Carousel {
         if(arr&&arr.length > 0){
             Carousel._arr = arr;
             Carousel._index = 0;
-            Carousel.Next(); //start
+            //Carousel.Next(); //start
+            Carousel.Render();
             Carousel._interval = setInterval(function(){ Carousel.Next(); },3000);
         }
+
     }
 
-    static Next(){
+    static Render() {
         const carouselDiv = document.getElementById("carousel");
         const textoDiv = document.getElementById("carousel-title");
         const atual = Carousel._arr[Carousel._index];
 
         carouselDiv.innerHTML = `<img src="img/${atual.imagem}">`;
         textoDiv.innerHTML = `<a href="${atual.link}">${atual.texto}</a>`;
+    }
 
-        Carousel._index = (Carousel._index+1) % Carousel._arr.length;
+    static Next() {
         Carousel._index++;
         if(Carousel._index >= Carousel._arr.length){
             Carousel._index = 0;
         }
+        Carousel.Render()
+    }
+
+    static Prev() {
+        Carousel._index--;
+        
+        if (Carousel._index < 0) {
+            Carousel._index = Carousel._arr.length - 1;
+        }
+        
+        Carousel.Render();
     }
 };

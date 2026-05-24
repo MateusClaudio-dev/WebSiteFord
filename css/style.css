@@ -90,7 +90,35 @@ main {
     min-height: calc(100% - 167px);
 }
 
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.carousel img {
+    width: 50px;
+}
+
+.btn-carousel {
+    position: absolute;
+    background-color: #1B357E;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.btn-prev {
+    left: 20px;
+}
+
+.btn-next {
+    right: 20px;
+}
 
 nav#social {
     display: inline;

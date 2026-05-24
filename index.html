@@ -30,17 +30,11 @@
 
     </header>
     <main>
-        <div class="btn_next">Next</div>
-        <div class="btn_back">Back</div>
-        <div id="carousel">
-            
-            
-        <div>
-        
-        <div id="carousel-title">
-
-        </div>
-        
+        <div class="carousel-container">
+            <button class="btn-carousel btn-prev" onclick="Carousel.Prev();">&#10094;</button>
+            <a href="lancamento.html"><div id="carousel"></div></a>
+            <button class="btn-carousel btn-next" onclick="Carousel.Next();">&#10095;</button>
+        </div> <div id="carousel-title"></div>
         <script>
              //insert each image on carousel
             carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
@@ -48,7 +42,6 @@
             carouselArr.push(new Carousel("imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
             Carousel.Start(carouselArr);
         </script>
-        
     </main>
     <footer>
         <nav id="social">

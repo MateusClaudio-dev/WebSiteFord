@@ -23,6 +23,11 @@ select:focus-visible {
     outline: none;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 main div {
     display: inline-block;
     vertical-align: top;
