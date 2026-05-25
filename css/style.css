@@ -87,6 +87,7 @@ nav li {
 
 main {
     display: flex;
+    flex-direction: column;
     min-height: calc(100% - 167px);
 }
 
@@ -97,8 +98,8 @@ main {
     justify-content: center;
 }
 
-.carousel img {
-    width: 50px;
+#carousel img {
+    width: 100%;
 }
 
 .btn-carousel {

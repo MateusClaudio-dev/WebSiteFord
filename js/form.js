@@ -27,10 +27,13 @@ event.preventDefault();
             form.elements.namedItem("contato").value);
 
     if (data.nome !== "") {
-        alert('Obrigado sr(a) ' + data.nome + ' ' + data.sobrenome + ', os seus dados foram encaminhados com sucesso!');
+       alert('Obrigado sr(a) ' + data.nome + ' ' + data.sobrenome + ', os seus dados foram encaminhados com sucesso!');
     }
 
+    console.log(data)
     form.reset();
-  
+    
 }
+
+
 
